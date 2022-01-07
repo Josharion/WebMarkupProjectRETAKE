@@ -1,0 +1,4 @@
+Student name: Joshua Eichenberger
+Student number: 575849 
+Student class: INF1A
+URL student GitHub repository: https://github.com/Josharion/WebMarkupProjectRETAKE
