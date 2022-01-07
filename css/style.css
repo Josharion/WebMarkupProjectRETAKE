@@ -1,0 +1,757 @@
+/* PC */
+body {
+	font-family: Ariel, Helvetica, sans-serif;
+	background-color: #0099ff;
+}
+h1 h5{
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 0.4rem;
+}
+
+h2, h6 {
+	color: blue;
+	letter-spacing: 2px;
+	
+}
+	
+p {
+	font-family: Notable;
+	font-size: 15px;
+	line-height: 105%
+}
+
+footer {
+	font-size: 10px;
+	word-spacing: 1.2em;
+}
+
+/* header & footer PC*/
+#menuToggle {
+	display: none;
+}
+
+#header-grid-container {
+		border: solid 10px black;
+		padding: 10px;
+		display: grid;
+		background-color: #0099ff;
+		grid-template-areas:
+			"logo"
+			"title"
+			"payoff"
+			"nav";
+}
+#besttripslogo	{	
+	grid-area: logo;
+	width: 20%;	
+}
+#header-grid-container > h1 {
+	grid-area: title;
+}
+#header-grid-container > h2 {
+	grid-area: payoff;
+}
+#nav {
+	grid-area: nav;	
+}
+
+#nav > *	{
+		padding: 0;
+		margin: 0;
+		text-decoration: none;
+		list-style: none;
+	}		
+	
+#nav > ul	{
+		float: left;
+	}
+	
+#nav > ul > li	{
+		display: inline-block;
+		margin: 30px;
+	}	
+	
+#nav > ul > li > a	{
+		color: black;
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+	
+#nav > ul > li > a:visited	{	
+		color: #6600ff;
+	}
+#nav > ul > li > a:hover	{	
+		text-shadow: 2px 1px 1px #6600ff;
+	}
+
+#bottom	{
+	display: grid;
+	grid-template-areas:
+		"footer footer cookie"
+		"footer footer cookie";
+}		
+
+#bottom-footer	{
+	grid-area: footer;
+	font-size: 10px;
+}
+
+#cookiestatement	{
+	grid-area: cookie;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background-color: #FA0;
+	opacity: 50%;
+	z-index: 9999;
+}
+
+/* homepage PC */
+	
+#index-destinations	{
+		background: #33adff;
+		display: grid;
+		padding: 10px;
+		grid-gap: 10px;
+		grid-template-areas:"video video video"
+							"article1 article1 aside"
+							"article2 article2 aside"
+							"article3 article3 aside";
+}
+#index-video {
+	grid-area: video;
+	width: 70%;
+	padding: 15px;
+}
+
+#index-article1	{
+	grid-area: article1;
+	border: solid 5px black;
+	padding: 15px;
+	background-color: #b3c6ff;
+}
+
+#index-article2 {
+	grid-area: article2;
+	border: solid 5px black;
+	background-color: #b3c6ff;
+	padding: 15px;
+}
+
+#index-article3 {
+	grid-area: article3;
+	border: solid 5px black;
+	padding: 15px;
+	background-color: #b3c6ff;
+}
+
+#index-article1 > a > img {
+	width: 30%;
+	float: right;
+	padding: 10px;
+}
+	
+#index-article2 > a > img	{		
+	width: 30%;
+	float: right;
+	padding: 10px;
+}
+#index-article3> a > img	{
+	width: 30%;
+	float: right;
+	padding: 10px;
+}
+#index-aside {
+	grid-area: aside;
+	font-size: 30px;
+	padding: 10px;
+}
+
+/*best destinations PC */
+
+#bestdestinations-grid-container {
+		background: #33adff;
+		display: grid;
+		padding: 10px;
+		grid-gap: 10px;
+		
+		grid-template-areas:"article2 article1 article3 "
+							"article2 article1 article3 "
+							"article5 article1 article3 "
+							"article5 article1 article4 "
+							"article5 article1 article4 "
+							"article5 article1 article4 "
+							"article5 article6 article6 "							
+							"product1 product2 product3";
+}
+
+#bestdestinations-article1	{
+	grid-area: article1;
+	background-color: #e6ffff;
+	border: solid 1px black;
+	padding: 5px;
+}
+
+#bestdestinations-article2	{
+	grid-area: article2;
+	background-color: #ccffff;
+	border: solid 1px black;
+	padding: 5px;	
+}
+
+#bestdestinations-article3	{
+	grid-area: article3;
+	background-color: #b3ffff;
+	border: solid 1px black;
+	padding: 5px;
+}
+
+#bestdestinations-article4	{
+	grid-area: article4;
+	background-color: #99ffff;
+	border: solid 1px black;
+	padding: 5px;
+}
+
+#bestdestinations-article5	{
+	grid-area: article5;
+	background-color: #80ffff;
+	border: solid 1px black;
+	padding: 5px;
+}
+
+#bestdestinations-article6	{
+	grid-area: article6;
+	background-color: #00e6e6;
+	border: solid 1px black;
+	padding: 5px;
+}
+#bestdestination-aside1 {
+	grid-area: product1;
+	border: solid 1px black;
+	padding: 5px;
+}
+#bestdestination-aside2 {
+	grid-area: product2;
+	border: solid 1px black;
+	padding: 5px;
+}
+#bestdestination-aside3 {
+	grid-area: product3;
+	border: solid 1px black;
+	padding: 5px;
+}
+
+#bestdestinations-img-1 {
+	width: 80%;
+}
+#bestdestinations-img-2 {
+	width: 80%;
+}
+#bestdestinations-img-3 {
+	width: 80%;
+}
+
+
+#bottom	{
+	display: grid;
+	grid-template-areas:
+		"footer footer cookie"
+		"footer footer cookie";
+}		
+
+/* tickets page PC */
+
+#tickets-container	{
+		background: #33adff;
+		display: grid;
+		padding: 10px;
+		grid-gap: 10px;		
+		grid-template-areas: 	"article article article"
+								"ticket-table ticket-table aside"
+								"ticket-table ticket-table aside"
+								"ticket-table ticket-table aside"
+								"ticket-table ticket-table aside"
+								"ticket-table ticket-table aside"
+								"footer footer footer";
+
+}
+
+#tickets-aside	{
+	grid-area: aside;
+	grid-template-areas:"aside1"
+						"aside2"
+						"aside3";
+}
+
+#tickets-aside1	{
+	grid-area: aside1;
+}
+
+#tickets-aside2 {
+	grid-area: aside2;
+}
+
+#tickets-aside3	{
+	grid-area: aside3;
+}
+
+#tickets-article	{
+	grid-area: article;
+	text-indent: 10px;
+}
+
+#tickets-table	{
+	grid-area: ticket-table;
+	width: 100%;
+	border: double 3px black;
+}
+#tickets-table th	{	
+	text-align: left;
+	border: solid 1px black;
+}
+
+#tickets-table td	{
+	background: grey;
+	border: solid 1px black;
+}
+
+#tickets-img1 {
+	width: 100%;
+}
+#tickets-img2 {
+	width: 100%;
+}
+#tickets-img3 {
+	width: 100%;
+}
+
+#tickets-footer	{
+	grid-area: footer;
+}
+
+/* contact PC */
+#contact-container	{
+		background: #33adff;
+		display: grid;
+		padding: 10px;
+		grid-gap: 10px;
+		grid-template-areas: "info info info"
+							 "form . aside";
+}						 
+						
+#contact-info	{
+	grid-area: info;
+}
+
+#form	{
+	grid-area: form;
+	width: 100%;
+}
+
+#contact-aside-images	{
+	grid-area: aside;
+}
+
+#contact-aside-images > aside > a > img {
+	width: 20%;
+}
+
+
+/* tablet */
+ @media screen and (min-width:481px) and (max-width:1179px) {
+/* homepage tablet */	
+#index-destinations	{
+		background: #33adff;
+		display: grid;
+		padding: 10px;
+		grid-gap: 10px;
+		grid-template-areas:"aside aside aside"
+							"video video video"
+							"article3 article3 article3"
+							"article2 article2 article2"							
+							"article1 article1 article1";
+	}
+
+#index-destinations > article > a > img {
+	width: 30%;
+	float: left;
+	padding: 10px;
+}
+#index-video	{
+	width: 50%;
+}
+
+/* bestdestinations tablet */
+
+#bestdestinations-grid-container {
+		background: #33adff;
+		display: grid;
+		padding: 10px;
+		grid-gap: 10px;
+		
+		grid-template-areas:"article1 article2"
+							"article1 article2"
+							"article3 article2"
+							"article3 article5"
+							"article3 article5"
+							"article3 article5"
+							"article3 article5"
+							"article6 article6"
+							"product1 product2";							
+}
+
+#bestdestinations-article4	{
+	display: none;
+}
+#bestdestination-aside3	{
+	display: none;
+}
+/* tickets pc tablet */
+
+#tickets-container	{
+		background: #33adff;
+		display: grid;
+		padding: 10px;
+		grid-gap: 10px;		
+		grid-template-areas: 	"article article"
+								"ticket-table ticket-table"
+								"ticket-table ticket-table"
+								"ticket-table ticket-table"
+								"ticket-table ticket-table"
+								"ticket-table ticket-table"
+								"footer footer"
+								"aside aside";
+
+}
+
+#tickets-aside	{
+	grid-area: aside;
+	display: grid;
+	grid-template-areas: "aside2 aside3";
+}
+
+#tickets-aside1	{
+	display: none;
+}
+
+#tickets-aside2 {
+	grid-area: aside2;
+}
+
+#tickets-aside3	{
+	grid-area: aside3;
+}
+
+#tickets-article	{
+	grid-area: article;
+}
+
+#tickets-table	{
+	grid-area: ticket-table;
+	width: 100%;
+	border: double 3px black;
+}
+#tickets-table th	{	
+	text-align: left;
+	border: solid 1px black;
+}
+
+#tickets-table td	{
+	background: grey;
+	border: solid 1px black;
+}
+
+#tickets-img1 {
+	width: 100%;
+}
+#tickets-img2 {
+	width: 100%;
+}
+
+#tickets-footer	{
+	grid-area: footer;
+}
+
+/* contact tablet page */
+
+#contact-container	{
+		background: #33adff;
+		display: grid;
+		padding: 10px;
+		grid-gap: 10px;
+		grid-template-areas: "info info"
+							 "form aside";
+}						 
+						
+#contact-info	{
+	grid-area: info;
+}
+
+#form	{
+	grid-area: form;
+	width: 100%;
+}
+
+#contact-aside-images	{
+	grid-area: aside;
+}
+
+#contact-aside-images > aside > a > img {
+	width: 10%;
+}
+
+}
+
+
+
+
+
+
+/* mobile */
+
+ @media screen and (max-width:480px) {
+
+#MobileNavigationBar	{
+	grid-area: hamburgernav;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 34%;
+}
+	
+#menuToggle	{		
+	display: block;
+	position: relative;
+	top: 50px;
+	left: 50px;		  
+	z-index: 1;		 
+	user-select: none;
+}
+	
+#menuToggle a {
+	color: black;
+}	
+
+#menuToggle a:hover	{
+	text-shadow: 2px 1px 1px #6600ff;
+	transition: .3s;
+}
+
+#menuToggle input	{
+	display: block;
+	width: 40px;
+	height: 32px;
+	position: absolute;
+	top: -7px;
+	left: -5px;		  
+	cursor: pointer;		  
+	opacity: 0; 
+	z-index: 2; 		
+}
+
+#menuToggle span	{
+	display: block;
+	width: 33px;
+	height: 4px;
+	margin-bottom: 5px;
+	position: relative;		  
+	background: black;
+	border-radius: 3px;		  
+	z-index: 1;		  
+	transform-origin: 4px 0px;		  
+	transition: transform 0.10s cubic-bezier(0.77,0.2,0.05,1.0),
+				  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+				  opacity 0.55s ease;
+}
+
+#menuToggle span:first-child	{
+	transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)	{
+	transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span	{
+	opacity: 1;
+	transform: rotate(45deg) translate(-2px, -1px);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)	{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)	{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu	{
+	opacity: 100%;
+	position: absolute;
+	width: 250%;
+	margin: -100px 0 0 -250%;
+	padding: 50px;
+	padding-top: 100px;	  
+	background: white;
+	list-style-type: none;
+	transform-origin: 0% 0%;
+	transform: translate(-250%, 0);	  
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li	{
+	padding: 10px 0;
+	font-size: 40px;
+	text-align: right;
+}
+
+#menuToggle input:checked ~ ul	{
+  transform: none;
+}
+
+
+/* homepage mobile */
+#header-grid-container {
+		border: solid 10px black;
+		padding: 10px;
+		display: grid;
+		background-color: #0099ff;
+		grid-template-areas:			
+			"title title hamburgernav"
+			"payoff payoff hamburgernav";
+}
+
+#besttripslogo	{	
+	display: none;	
+}
+#nav {
+	display: none;	
+}
+
+/* homepage mobile */
+#index-destinations	{
+		background: #33adff;
+		display: grid;
+		padding: 10px;
+		grid-gap: 10px;
+		grid-template-columns: 70% 30%;
+		grid-template-areas:"aside aside aside"
+							"article3 article3 article3"
+							"article2 article2 article2"							
+							"article1 article1 article1";
+	}
+
+#index-destinations > article > a > img {
+	width: 30%;
+	float: left;
+	padding: 10px;
+}
+#index-video	{
+	display: none;
+}
+
+/*best destinations mobile */
+
+#bestdestinations-grid-container {
+		background: #33adff;
+		display: grid;
+		padding: 10px;
+		grid-template-columns: 70% 30%;
+		grid-template-areas:"article5 ."
+							"article3 ."
+							"article2 ."
+							"article1 ."
+							"product1 ."
+							"product2 ."
+							"prodoct3 .";
+}
+
+#bestdestinations-article4  {
+	display: none;
+}
+
+#bestdestinations-article6	{
+	display: none;
+}
+							
+/* tickets mobile */
+
+#tickets-container	{
+		background: #33adff;
+		display: grid;
+		padding: 10px;
+		grid-gap: 10px;	
+		border: double 10px black;
+		grid-template-areas: 
+								"ticket-table ticket-table"
+								"footer footer"
+								"aside aside";
+}
+#tickets-article	{
+	display: none;
+}
+#tickets-aside	{
+	grid-area: aside;
+}
+
+#tickets-table	{
+	grid-area: ticket-table;
+	font-size: 12px;
+}
+
+#tickets-table td	{
+	background: grey;
+	border: solid 1px black;
+}
+
+#tickets-img1 {
+	width: 200px;
+}
+#tickets-img2 {
+	width: 200px;
+}
+#tickets-img3 {
+	width: 200px;
+}
+
+#tickets-footer	{
+	grid-area: footer;
+}
+/* contact mobile*/
+
+#contact-container	{
+		background: #33adff;
+		display: grid;
+		padding: 10px;
+		grid-gap: 10px;
+		grid-template-columns: 70% 30%;
+		grid-template-areas: "info ."
+							 "form ."
+							 "form ."
+							 "form ."
+							 "form ."
+							 "aside .";
+}						 
+						
+#contact-info	{
+	grid-area: info;
+}
+
+#form	{
+	grid-area: form;
+	width: 100%;
+}
+
+#contact-aside-images	{
+	grid-area: aside;
+}
+
+#contact-aside-images > aside > a > img {
+	width: 100%;
+}
+
+}
+ 
